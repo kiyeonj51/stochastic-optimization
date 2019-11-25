@@ -31,7 +31,7 @@ def plotresult(plot,outputs, file_name=''):
     xlabel = plot['xlabel']
     yscale = plot['yscale']
     title = plot['title']
-    fig = plt.figure(num=None, figsize=(8, 6), dpi=80, facecolor='w', edgecolor='k')
+    plt.figure(num=None, figsize=(8, 6), dpi=80, facecolor='w', edgecolor='k')
     if xlabel == "iteration":
         for i in range(len(outputs[ylabel])):
             plt.plot(outputs[ylabel][i], label=outputs['names'][i])

@@ -70,7 +70,7 @@ class OPT(ABC):
                 regularizers.append(regularizer)
                 te_errors.append(te_error)
                 elapsed_times.append(end - start)
-                t.set_description('tr_error : {:3.6f}, regularizer : {:.7e}, te_error : {:3.6f} '.format(tr_error, regularizer, te_error))
+                t.set_description('tr_error|{:3.6f}, regularizer : {:.7e}, te_error : {:3.6f} '.format(tr_error, regularizer, te_error))
                 if (iteration > 0) and (iteration % int(max_iter/5) == 0):
                     t.write(' ')
         res = {
